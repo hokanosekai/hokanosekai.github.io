@@ -82,7 +82,7 @@ const config = {
       description:
         'Organisation d\'un CTF pour les étudiants de l\'université de la Rochelle',
       imageUrl: 'https://hokanosekai.github.io/uhoctf_logo.png',
-      link: 'https://univhackon.fr',
+      link: 'https://github.com/UnivHackOn',
     },
     {
       title: 'Wordus',
