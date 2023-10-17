@@ -81,7 +81,7 @@ const config = {
       title: 'UnivHackOn CTF',
       description:
         'Organisation d\'un CTF pour les étudiants de l\'université de la Rochelle',
-      imageUrl: 'https://via.placeholder.com/250x250',
+      imageUrl: 'https://hokanosekai.github.io/uhoctf_logo.png',
       link: 'https://univhackon.fr',
     },
     {
