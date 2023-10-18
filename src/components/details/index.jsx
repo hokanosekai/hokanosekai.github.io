@@ -256,6 +256,7 @@ const Details = ({ profile, loading, social, github }) => {
                   title="Root-me:"
                   value={social.rootme}
                   link={`https://www.root-me.org/${social.rootme}`}
+                />
               )}
             </Fragment>
           )}
