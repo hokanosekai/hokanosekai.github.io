@@ -40,6 +40,10 @@ export interface Github {
 
 export interface Social {
   /**
+   * Root-me
+   */
+  rootme?: string;
+  /**
    * LinkedIn
    */
   linkedin?: string;

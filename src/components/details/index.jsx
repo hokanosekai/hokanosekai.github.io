@@ -21,6 +21,9 @@ import {
   FaLinkedin,
   FaYoutube,
 } from 'react-icons/fa';
+import {
+  GiChewedSkull
+} from 'react-icons/gi'
 import PropTypes from 'prop-types';
 import { skeleton } from '../../helpers/utils';
 
@@ -246,6 +249,13 @@ const Details = ({ profile, loading, social, github }) => {
                   value={social.email}
                   link={`mailto:${social.email}`}
                 />
+              )}
+              {social?.rootme && (
+                <ListItem
+                  icon={<GiChewedSkull />}
+                  title="Root-me:"
+                  value={social.rootme}
+                  link={`https://www.root-me.org/${social.rootme}`}
               )}
             </Fragment>
           )}

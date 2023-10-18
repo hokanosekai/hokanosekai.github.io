@@ -11,6 +11,7 @@ const config = {
     },
   },
   social: {
+    rootme: 'Hokanosekai',
   //  linkedin: 'ariful-alam',
   //  twitter: 'arif_szn',
   //  mastodon: 'arifszn@mastodon.social',
