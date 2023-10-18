@@ -88,6 +88,8 @@ const Details = ({ profile, loading, social, github }) => {
     return array;
   };
 
+  console.log(social);
+
   return (
     <div className="card shadow-lg compact bg-base-100">
       <div className="card-body">

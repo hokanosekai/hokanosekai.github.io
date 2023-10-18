@@ -145,6 +145,7 @@ export const sanitizeConfig = (config) => {
       },
     },
     social: {
+      rootme: config?.social?.rootme,
       linkedin: config?.social?.linkedin,
       twitter: config?.social?.twitter,
       mastodon: config?.social?.mastodon,
