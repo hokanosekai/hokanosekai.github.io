@@ -89,7 +89,7 @@ const config = {
       title: 'Wordus',
       description: 
         'Jeu multijoueur de frappe de clavier. (groupe de 6)',
-      imageUrl: 'https://via.placeholder.com/250x250',
+      imageUrl: 'https://wordus.xyz/src/img/logo/Logo.png',
       link: 'https://wordus.xyz',
     }
   ],
