@@ -238,3 +238,39 @@ export const genericError = {
   title: 'Ops!!',
   subTitle: 'Something went wrong.',
 };
+
+// link format: [text](url)
+const LINK_REGEX = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+// eslint-disable-next-line react/prop-types
+const RawHTML = ({ children }) => {
+  return <div dangerouslySetInnerHTML={{ __html: children }} />;
+};
+
+// return a list text and RawHTML
+export const parseTextToHTML = (text) => {
+  const result = [];
+
+  // run the regex to find the links
+  const parts = text.matchAll(LINK_REGEX);
+
+  for (const part of parts) {
+    const split = text.split(part[0]);
+
+    // push the text before the link
+    result.push(split[0]);
+
+    // push the link
+    result.push(
+      <RawHTML>{`<a href="${part[2]}" class="text-primary" target="_blank" rel="noopener noreferrer">${part[1]}</a>`}</RawHTML>
+    );
+
+    // update the text
+    text = split[1];
+  }
+
+  // push the remaining text
+  result.push(text);
+
+  return result;
+};

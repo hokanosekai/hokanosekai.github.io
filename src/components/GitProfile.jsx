@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Fragment, useCallback, useEffect, useState } from 'react';
 import HeadTagEditor from './head-tag-editor';
 import ErrorPage from './error-page';
-import ThemeChanger from './theme-changer';
+//import ThemeChanger from './theme-changer';
 import AvatarCard from './avatar-card';
 import Details from './details';
 import Skill from './skill';
@@ -199,8 +199,8 @@ const GitProfile = ({ config }) => {
                     <div className="grid grid-cols-1 gap-6">
                       <ExternalProject
                         loading={loading}
-                          externalProjects={sanitizedConfig.externalProjects}
-                          googleAnalytics={sanitizedConfig.googleAnalytics}
+                        externalProjects={sanitizedConfig.externalProjects}
+                        googleAnalytics={sanitizedConfig.googleAnalytics}
                       />
                       <Project
                         repo={repo}

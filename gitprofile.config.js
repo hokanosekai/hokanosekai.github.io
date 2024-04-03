@@ -34,14 +34,16 @@ const config = {
     'JavaScript',
     'React.js',
     'Node.js',
+    'Vue.js',
     'Nest.js',
     'MySQL',
     'PostgreSQL',
     'Git',
     'Docker',
-    'CSS',
     'Tailwind',
+    'Python',
     'C',
+    'Rust',
     'Asm',
   ],
   /* experiences: [
@@ -79,16 +81,23 @@ const config = {
   // To hide the `My Projects` section, keep it empty.
   externalProjects: [
     {
+      title: 'LibMMU',
+      description:
+        'libMMU est un projet open-source basé sur la thèse [In the Land of MMUs: Multiarchitecture OS-Agnostic Virtual Memory Forensics](https://www.s3.eurecom.fr/docs/tops22_oliveri.pdf) de Andrea Oliveri et Davide Balzarotti et leur outil [MMUShell](https://github.com/eurecom-s3/mmushell). C\'est une crate Rust qui permet de simplifier le processus de reconstruction de l\'espace d\'adresse virtuel à partir d\'un dump de la mémoire volatile.',
+      imageUrl: 'https://github.com/Memoscopy/libMMU/raw/main/assets/libmmu.webp',
+      link: 'https://github.com/Memoscopy/libMMU'
+    },
+    {
       title: 'UnivHackOn CTF',
       description:
-        'Organisation d\'un CTF pour les étudiants de l\'université de la Rochelle',
+        'Organisation et création d\'un CTF pour les étudiants de l\'université de la Rochelle. Avec plus de 30 challenges répartis dans 11 catégories, les 50 participants on pu s\'affronter le temps de 1 semaine. Le but était de sensibiliser les étudiants à la sécurité informatique et de leur faire découvrir le monde des CTF.',
       imageUrl: 'https://hokanosekai.github.io/uhoctf_logo.png',
       link: 'https://github.com/UnivHackOn',
     },
     {
       title: 'Wordus',
       description: 
-        'Jeu multijoueur de frappe de clavier. (groupe de 6)',
+        'Jeu multijoueur de frappe de clavier en temps réel. Défiez vos amis ou des inconnus pour voir qui est le plus rapide. Le jeu est issu d\'une Game Jam de 24h avec une équipe de 6 personnes.',
       imageUrl: 'https://wordus.xyz/src/img/logo/Logo.png',
       link: 'https://wordus.xyz',
     }

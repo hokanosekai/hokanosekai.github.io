@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { ga, skeleton } from '../../helpers/utils';
+import { ga, skeleton, parseTextToHTML } from '../../helpers/utils';
 import LazyImage from '../lazy-image';
 
 const displaySection = (externalProjects) => {
@@ -117,7 +117,7 @@ const ExternalProject = ({ externalProjects, loading, googleAnalytics }) => {
                     </div>
                   )}
                   <p className="mt-1 text-base-content text-opacity-60 text-sm">
-                    {item.description}
+                    {parseTextToHTML(item.description)}
                   </p>
                 </div>
               </div>
