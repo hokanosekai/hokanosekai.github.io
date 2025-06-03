@@ -30,13 +30,8 @@ const config = {
   //  email: 'arifulalamszn@gmail.com',
   },
   skills: [
-    'PHP',
-    'JavaScript',
-    'React.js',
-    'Node.js',
     'Vue.js',
-    'Nest.js',
-    'MySQL',
+    'Nuxt.js',
     'PostgreSQL',
     'Git',
     'Docker',
@@ -45,6 +40,9 @@ const config = {
     'C',
     'Rust',
     'Asm',
+    'Ansible',
+    'Terraform',
+    'Kubernetes',
   ],
   /* experiences: [
     {
@@ -80,6 +78,13 @@ const config = {
 
   // To hide the `My Projects` section, keep it empty.
   externalProjects: [
+    {
+      title: 'Frontdown',
+      description:
+        'Frontdown is a backup solution that aims to provide a simple and secure way to backup any host. It\'s based on restic that is a fast, secure, and efficient backup program. Frontdown is a project that is maintained by Frontdown Labs.',
+      imageUrl: 'https://avatars.githubusercontent.com/u/182524974?s=200&v=4',
+      link: 'https://github.com/frontdown-labs'
+    },
     {
       title: 'LibMMU',
       description:
